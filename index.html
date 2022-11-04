@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 500px)">
+
+</head>
+<body>
+
+  <div class="balanceContainer">
+    <div class="balance">
+      <h1 class="w400 small">My balance</h1>
+      <h2 class="w700 large">$921.48</h2>
+    </div>
+    <div class="logo"><img src="/images/logo.svg"></div>
+  </div>
+
+  <div class="chartContainer">
+    <h3 class="w700 large dark">Spending - Last 7 days</h3>
+    
+    <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+
+    <hr>
+    <h2 class="small w400">Total this month</h2>
+    <div class="summary">
+      <div class="thisMonth">
+        <h2 class="dark largest w700">$478.33</h2>
+      </div>
+      <div class="lastMonth">
+        <h2 class="dark small w700">+2.4%</h2>
+        <h2 class="small w400">from last month</h2>
+      </div>
+    </div>
+  </div>
+
+  <script src="code.js"></script>
+</body>
+</html>
